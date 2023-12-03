@@ -21,8 +21,7 @@ const contentRule = [requiredRule];
 
 <template>
   <main class="    ">
-  
-   <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
+    <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
     <section class="lg:flex  items-start justify-center mt-10 w-full  ">
       <div class="lg:w-1/3 flex flex-col items-center justify-center">
         <h1 class="text-2xl font-bold  text-amber-400 font-serif">Lorem Ipsum Café</h1>
@@ -32,7 +31,6 @@ const contentRule = [requiredRule];
         <div class=" text-start flex flex-col items-start space-y-5">
           <p class="text-center ">Monday - Friday: 9am - 5pm</p>
           <p class="text-center ">Saturday - Sunday: 10am - 4pm</p>
-        
         </div>
         <div class="w-full my-10">
           <IconDivider />
@@ -53,7 +51,7 @@ const contentRule = [requiredRule];
       <div class="lg:w-2/3 ">
         <div class="lg:hidden block text-center font-serif  mt-10 lg:mt-0 ">
           Leave us a message!
-           <IconDivider class="my-10 lg:my-0" />
+          <IconDivider class="my-10 lg:my-0" />
         </div>
         <v-form @submit.prevent>
           <v-container>
@@ -80,6 +78,28 @@ const contentRule = [requiredRule];
           </v-container>
         </v-form>
       </div>
+    </section>
+    <section class=" my-24 ">
+       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
+      
+          <div class="text-4xl font-serif text-center"> Find us! </div>
+          <div class="w-full pt-8">
+            <IconDivider />
+          </div>
+          <div class="w-2/3 text-center my-8 text-gray-500">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, iure optio rem nihil placeat laboriosam id
+              tempora aliquid quam, maxime eligendi dolorem eum quisquam eius!</p>
+          </div>
+        
+        </div>
+        <div class="lg:flex  items-center justify-center gap-10">
+     <Icon  name="uil:facebook" class="text-8xl text-amber-400 " />
+          <Icon  name="uil:instagram" class="text-8xl text-amber-400 " />
+          <Icon  name="uil:youtube" class="text-8xl text-amber-400 " />
+          <Icon  name="fa6-brands:x-twitter" class="text-8xl text-amber-400 " />
+     
+        </div>
+     
     </section>
   </main>
 </template>

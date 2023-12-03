@@ -40,6 +40,9 @@ const scrollToTop = () => {
             <a href="/">
               <Icon name="uil:youtube" class="text-4xl" />
             </a>
+            <a href="/">
+              <Icon name="fa6-brands:x-twitter" class="text-4xl" />
+            </a>
           </div>
         </div>
         <IconDivider />

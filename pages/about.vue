@@ -29,7 +29,7 @@
       </section>
    
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-        <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-10" />
+      
         <div class="text-4xl font-serif text-center"> Lorem ipsum dolor sit. </div>
         <div class="w-full pt-8">
           <IconDivider />
