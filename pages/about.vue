@@ -2,7 +2,7 @@
   <main class=" ">
     <PageHeader title="Our Story" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
       exercitationem."/>
-    <v-sheet class="lg:p-20">
+    <v-sheet class="lg:p-20 mt-32">
   
       <v-carousel>
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe3.jpg"

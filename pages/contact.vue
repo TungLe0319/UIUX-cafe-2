@@ -22,7 +22,7 @@ const contentRule = [requiredRule];
 <template>
   <main class="    ">
     <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
-    <section class="lg:flex  items-start justify-center mt-10 w-full  ">
+    <section class="lg:flex  items-start justify-center mt-32 w-full  ">
       <div class="lg:w-1/3 flex flex-col items-center justify-center">
         <h1 class="text-2xl font-bold  text-amber-400 font-serif">Lorem Ipsum Café</h1>
         <div class="w-full my-10">

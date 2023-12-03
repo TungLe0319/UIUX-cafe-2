@@ -2,7 +2,7 @@
   <main class="  ">
      <PageHeader title="What we do" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
       exercitationem."/>
-    <v-sheet color=" p-4 lg:p-20 ">
+    <v-sheet color=" p-4 lg:px-20 ">
      
       <section class="w-full  my-20 lg:my-40">
         <v-row>
