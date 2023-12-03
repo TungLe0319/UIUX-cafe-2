@@ -1,7 +1,7 @@
 <template>
    <div class="flex flex-col items-center justify-center w-full">
         <div class=" text-center w-2/3 my-8">
-          <h1 class="text-6xl font-bold  ">Our Photo Gallery</h1>
+          <h1 class="text-6xl font-bold dancing-script  ">Our Photo Gallery</h1>
           <hr class="w-1/2 mx-auto border border-amber-400 my-5">
           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
             quod obcaecati eligendi similique repellendus vero voluptas recusandae eius, veniam at est nemo quidem ad.</p>
@@ -31,6 +31,8 @@
 
 </script>
 
-<style>
-
+<style scoped>
+.icon {
+  @apply text-6xl text-amber-400 drop-shadow-md hover:rotate-180 transition-all duration-300
+}
 </style>

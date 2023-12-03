@@ -11,6 +11,9 @@ dependencies:
   sass:
     specifier: ^1.69.5
     version: 1.69.5
+  vue-preloader:
+    specifier: ^1.1.4
+    version: 1.1.4
 
 devDependencies:
   '@invictus.codes/nuxt-vuetify':
@@ -6385,6 +6388,15 @@ packages:
 
   /vue-devtools-stub@0.1.0:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
+
+  /vue-preloader@1.1.4:
+    resolution: {integrity: sha512-XvBS4rzhPDJ/Ya+FOMVfkMK4maZuEn6/CED/Y94NTJiKnU/ASikixB2dYGgHfYhosRPdAVXIZJfetWnPbHgdJA==}
+    engines: {node: '>=14'}
+    dependencies:
+      vue: 3.3.9
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /vue-router@4.2.5(vue@3.3.9):
     resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}

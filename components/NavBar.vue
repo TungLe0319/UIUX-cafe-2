@@ -72,7 +72,11 @@ function setupIndicatorListeners() {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
-  setupIndicatorListeners()
+  setTimeout(() => {
+    setupIndicatorListeners()
+  }, 2000)
+
+
 })
 
 onBeforeUnmount(() => {
@@ -80,8 +84,7 @@ onBeforeUnmount(() => {
 })
 
 
-
-
+//set timeout for 2 seconds 
 
 
 
@@ -98,7 +101,7 @@ const items = [
 const threshold = ref(200)
 </script>
 <template>
-  <v-app-bar app scroll-behavior="collapse" :scroll-threshold="threshold"
+  <v-app-bar app scroll-behavior="elevation" :scroll-threshold="threshold"
     class="px-4 font-serif transition-color duration-500"
     :class="{ 'bg-white': Y > threshold, 'bg-transparent': Y <= threshold }">
     <template v-slot:prepend>
@@ -165,7 +168,7 @@ const threshold = ref(200)
   transition: 0.4s;
   background-color: rgb(253 186 116);
 
-  z-index: 999999;
+  
   border-radius: 8px 8px 0 0;
 }
 

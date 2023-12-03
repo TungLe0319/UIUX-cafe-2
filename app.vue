@@ -1,14 +1,18 @@
 <script lang="ts" setup>
 import './assets/css/tailwind.css'
+
 </script>
 
 <template>
   <div class="">
-    <v-app>
+    <NuxtLayout>
+   <v-app>
 
-      <NavBar />
-      <NuxtPage />
-      <Footer />
-    </v-app>
+        <NavBar />
+        <NuxtPage />
+        <Footer />
+      </v-app>
+    </NuxtLayout>
+   
   </div>
 </template>
