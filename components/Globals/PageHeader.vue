@@ -22,7 +22,9 @@
 </template>
 
 <script lang="ts" setup>
-import IconDivider from './Globals/IconDivider.vue';
+import IconDivider from './IconDivider.vue';
+
+
 const expand = ref(false)
 const props = defineProps(['title', 'content'])
 

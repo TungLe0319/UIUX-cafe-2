@@ -1,8 +1,9 @@
 <template>
-  <main class="flex flex-col items-center justify-center   mt-24 ">
-    <v-sheet color=" p-4 lg:p-20 ">
-      <PageHeader title="What we do" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
+  <main class="  ">
+     <PageHeader title="What we do" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
       exercitationem."/>
+    <v-sheet color=" p-4 lg:p-20 ">
+     
       <section class="w-full  my-20 lg:my-40">
         <v-row>
           <template v-for="(image, imgIdx) in imageLayout" :key="imgIdx">
@@ -36,7 +37,7 @@
         </div>
         <div class="flex flex-col lg:flex-row gap-5  my-10  ">
           <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery5.jpg" alt=""
-            class="lg:w-1/2 ">
+            class="lg:w-1/2  ">
           <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery6.jpg" alt=""
             class="lg:w-1/2">
         </div>
@@ -47,7 +48,9 @@
 </template>
 
 <script lang="ts" setup>
+import CallToAction from '~/components/Globals/CallToAction.vue';
 import IconDivider from '~/components/Globals/IconDivider.vue';
+import PageHeader from '~/components/Globals/PageHeader.vue';
 
 const imageLayout = [
   { cols: 4 },

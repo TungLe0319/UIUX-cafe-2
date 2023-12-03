@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import Button from './Globals/Button.vue';
+
 import IconDivider from './Globals/IconDivider.vue';
 const items = [
   {

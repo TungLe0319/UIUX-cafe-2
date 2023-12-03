@@ -1,7 +1,8 @@
 <script setup >
 import IconDivider from "~/components/Globals/IconDivider.vue";
-import Button from '../components/Globals/Button.vue';
+
 import { ref } from 'vue';
+import PageHeader from "~/components/Globals/PageHeader.vue";
 
 const firstName = ref('');
 const lastName = ref('');
@@ -19,7 +20,7 @@ const contentRule = [requiredRule];
 </script>
 
 <template>
-  <main class="   flex flex-col items-center justify-center px-10">
+  <main class="    ">
   
    <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
     <section class="lg:flex  items-start justify-center mt-10 w-full  ">

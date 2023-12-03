@@ -107,7 +107,9 @@ const threshold = ref(200)
     <template v-slot:prepend>
       <v-menu offset="10">
         <template v-slot:activator="{ props }">
-          <v-app-bar-nav-icon v-bind="props"></v-app-bar-nav-icon>
+       <div class="lg:hidden block">
+           <v-app-bar-nav-icon  v-bind="props"></v-app-bar-nav-icon>
+       </div>
         </template>
         <v-list class="w-full bg-red-400" color="orange-lighten-4">
           <v-list-item v-for="(item, i) in items" :key="i" :value="item" color="primary">

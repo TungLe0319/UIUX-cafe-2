@@ -1,6 +1,6 @@
 
 <script setup>
-import Button from './Globals/Button.vue';
+
 import IconDivider from "./Globals/IconDivider.vue";
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });

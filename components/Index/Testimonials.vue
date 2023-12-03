@@ -75,7 +75,7 @@
 </template>
 
 <script lang="ts" setup>
-import IconDivider from './Globals/IconDivider.vue';
+import IconDivider from '../Globals/IconDivider.vue';
 
 
 

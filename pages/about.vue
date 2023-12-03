@@ -1,9 +1,9 @@
 <template>
-  <main class="mt-24">
-    <v-sheet class="p-20">
-      <PageHeader title="A beginning with no end in sight" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
+  <main class=" ">
+    <PageHeader title="Our Story" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
       exercitationem."/>
-       
+    <v-sheet class="lg:p-20">
+  
       <v-carousel>
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe3.jpg"
           cover></v-carousel-item>
@@ -13,8 +13,8 @@
           cover></v-carousel-item>
       </v-carousel>
     
-      <section v-for="section in sections" class="flex   my-10 lg:my-20">
-        <div class="  w-1/2  flex flex-col items-center justify-center  ">
+      <section v-for="section in sections" class="lg:flex   my-10 lg:my-20">
+        <div class="  lg:w-1/2  flex flex-col items-center justify-center  ">
          <span class="text-4xl  font-serif mb-5">
            {{ section.title }}
          </span>
@@ -22,7 +22,7 @@
           <img :src="section.image" alt="image of a restaurant" class=" w-2/3">
        
         </div>
-        <div class=" w-1/2 p-10  leading-8">
+        <div class=" lg:w-1/2 p-10  leading-8">
           <strong class="text-8xl  dancing-script text-orange-300">{{ section.content.charAt(0) }} </strong>
           {{ section.content }}
         </div>
@@ -30,7 +30,7 @@
    
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
         <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-10" />
-        <div class="text-4xl font-serif"> Lorem ipsum dolor sit. </div>
+        <div class="text-4xl font-serif text-center"> Lorem ipsum dolor sit. </div>
         <div class="w-full pt-8">
           <IconDivider />
         </div>
@@ -48,17 +48,14 @@
         </div>
       </div>
     </v-sheet>
-    <div class="hero-image relative border-y-2 border-gray-800">
-      <div
-        class="absolute -top-8 left-1/2 -translate-x-1/2  bg-black rounded-full p-1 shadow-md border-2 border-orange-300 hover:shadow-xl transition-all duration-150 ">
-        <Icon name='ph:flower-lotus' class="text-amber-400 text-6xl" />
-      </div>
-    </div>
+   <CallToAction/>
   </main>
 </template>
 
 <script lang="ts" setup>
+import CallToAction from '~/components/Globals/CallToAction.vue';
 import IconDivider from '~/components/Globals/IconDivider.vue';
+import PageHeader from '~/components/Globals/PageHeader.vue';
 
 const sections = [
   {

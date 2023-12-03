@@ -13,7 +13,7 @@ img {
 
 }
 main{
-  @apply min-h-screen
+  @apply min-h-screen mt-44
 }
 
 :root {
@@ -30,49 +30,4 @@ body{
 }
 
 
-/* Example usage of the color variables */
-.header {
-  background-color: var(--midnight-blue);
-}
 
-.button {
-  background-color: var(--auburn);
-  color: white;
-}
-
-/* Gradient using aero and auburn with text clipping */
-.gradient-aero-penn {
-  background: linear-gradient(to right, var(--aero), var(--penn-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Gradient using midnight-blue and penn-blue with text clipping */
-.gradient-midnight-penn {
-  background: linear-gradient(to right, var(--midnight-blue), var(--penn-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Custom Gradient using aero, auburn, midnight-blue, and penn-blue with text clipping */
-.gradient-custom {
-  background: linear-gradient(to right, var(--aero), var(--auburn), var(--midnight-blue), var(--penn-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-
-.gradient-text {
-  @apply bg-clip-text text-transparent;
-  @apply bg-gradient-to-br from-[var(--aero)]  to-[var(--penn-blue)];
-
-  /* Add a white outline to the text */
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.521); /* For Webkit-based browsers (Safari and Chrome) */
-  text-stroke: px white; /* Standard property, not supported in all browsers */
-
-  /* Add a slight text shadow as a fallback */
-  text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.1);
-}
