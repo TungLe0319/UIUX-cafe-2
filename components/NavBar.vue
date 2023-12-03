@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import Button from './Globals/Button.vue'
+
 
 const navTransform = ref('translateY(0)')
 const Y = ref(0)
@@ -84,7 +84,7 @@ onBeforeUnmount(() => {
 })
 
 
-//set timeout for 2 seconds 
+
 
 
 
@@ -94,16 +94,16 @@ const items = [
   { title: 'Gallery', href: '/gallery', icon: 'mdi-apps' },
   { title: 'Menu', href: '/menu', icon: 'mdi-food' },
   { title: 'Contact', href: '/contact', icon: 'mdi-email' },
-  { title: 'Shop', href: '/shop', icon: 'mdi-credit-card-plus-outline' },
+
 ]
 
 
 const threshold = ref(200)
 </script>
 <template>
-  <v-app-bar app scroll-behavior="elevation" :scroll-threshold="threshold"
-    class="px-4 font-serif transition-color duration-500"
-    :class="{ 'bg-white': Y > threshold, 'bg-transparent': Y <= threshold }">
+  <v-app-bar app scroll-behavior="elevate" :scroll-threshold="threshold"
+    class="px-4 font-serif transition-color duration-500 " 
+    :class="{ 'bg-white ': Y > threshold, 'bg-transparent': Y <= threshold }">
     <template v-slot:prepend>
       <v-menu offset="10">
         <template v-slot:activator="{ props }">

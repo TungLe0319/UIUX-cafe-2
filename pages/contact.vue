@@ -20,11 +20,8 @@ const contentRule = [requiredRule];
 
 <template>
   <main class="   flex flex-col items-center justify-center px-10">
-    <div class="flex flex-col items-center justify-center mt-24">
-      <h1 class=" text-4xl lg:text-8xl font-bold text-center text-amber-400 font-serif">Contact Us</h1>
-      <hr class=" my-5 w-full">
-      <p class="text-center text-amber-400">We'd love to hear from you!</p>
-    </div>
+  
+   <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
     <section class="lg:flex  items-start justify-center mt-10 w-full  ">
       <div class="lg:w-1/3 flex flex-col items-center justify-center">
         <h1 class="text-2xl font-bold  text-amber-400 font-serif">Lorem Ipsum Café</h1>
@@ -33,8 +30,8 @@ const contentRule = [requiredRule];
         </div>
         <div class=" text-start flex flex-col items-start space-y-5">
           <p class="text-center ">Monday - Friday: 9am - 5pm</p>
-          <p class="text-center ">Saturday: 10am - 4pm</p>
-          <p class="text-center ">Sunday: Closed</p>
+          <p class="text-center ">Saturday - Sunday: 10am - 4pm</p>
+        
         </div>
         <div class="w-full my-10">
           <IconDivider />

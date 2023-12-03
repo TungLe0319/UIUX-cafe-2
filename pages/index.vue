@@ -8,8 +8,11 @@ import Hero from '../components/Hero.vue'
     <BusinessHours />
     <LandingPhotoGallery />
     <Testimonials />
+
+    <CallToAction />
   </div>
 </template>
 
 
-<style scoped></style>
+<style scoped>
+</style>

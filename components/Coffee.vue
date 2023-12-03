@@ -1,23 +1,24 @@
 <template>
-  <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-4 p-10 bg-zinc-900">
-    <div v-for="item in items" class="  group transition-all duration-200 hover:scale-[1.02] relative">
-      <Button class="w-full !p-0">
-        <img :src="item.src" alt="coffee cup icon" class=" shadow-2xl w-full h-full object-cover">
-        <div
-          class="absolute  inset-0 w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-all duration-300 border-8 border-white/40  bg-black/40 scale-0 group-hover:scale-100   ease-in-out ">
-          <div class="p-2 bg-black/60 border-4  w-full h-full flex items-center justify-center  scale-90 ">
-            <h2 class="text-white text-3xl font-bold ">
-              {{ item.title }}
-            </h2>
-          </div>
-        </div>
-      </Button>
+  <div>
+    <div class="flex flex-col items-center  justify-center  my-10  ">
+      <div class="text-4xl  ">Lorem Ipsum Dolur</div>
+      <div class="w-full my-5">
+        <IconDivider />
+      </div>
+      <div class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+        accusantium quibusdam quos! Velit, incidunt eius!</div>
+    </div>
+    <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-6  py-10 ">
+      <div v-for="item in items" class="  group transition-all duration-200 hover:scale-[1.02] relative">
+        <img :src="item.src" alt="coffee cup icon" class=" shadow-2xl w-full  object-cover  h-96">
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import Button from './Globals/Button.vue';
+import IconDivider from './Globals/IconDivider.vue';
 const items = [
   {
     src: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -52,33 +53,12 @@ const items = [
 <style scoped>
 img {
   width: 100%;
-  height: 30rem;
+
   object-fit: cover;
 
 
 
-  @media screen and (max-width: 762px) {
-    height: 15rem;
-  }
 
-  @media screen and (max-width: 1024px) {
-    height: 25rem;
-
-  }
-
-  @media screen and (max-width: 1280px) {
-    height: 30rem;
-
-  }
-
-  @media screen and (max-width: 1536px) {
-    height: 35rem;
-  }
-
-  @media screen and (max-width: 1920px) {
-    height: 40rem;
-
-  }
 }
 
 

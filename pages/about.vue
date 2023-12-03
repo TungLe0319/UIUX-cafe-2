@@ -1,6 +1,9 @@
 <template>
-  <main>
+  <main class="mt-24">
     <v-sheet class="p-20">
+      <PageHeader title="A beginning with no end in sight" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
+      exercitationem."/>
+       
       <v-carousel>
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe3.jpg"
           cover></v-carousel-item>
@@ -9,13 +12,7 @@
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe2.jpg"
           cover></v-carousel-item>
       </v-carousel>
-      <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-        <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-10" />
-        <div class="text-7xl dancing-script">A beginning and no end in sight</div>
-        <div class="w-full my-5">
-          <IconDivider />
-        </div>
-      </div>
+    
       <section v-for="section in sections" class="flex   my-10 lg:my-20">
         <div class="  w-1/2  flex flex-col items-center justify-center  ">
          <span class="text-4xl  font-serif mb-5">
@@ -37,17 +34,17 @@
         <div class="w-full pt-8">
           <IconDivider />
         </div>
-        <div class="w-2/3 text-center my-8">
+        <div class="w-2/3 text-center my-8 text-gray-500">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, iure optio rem nihil placeat laboriosam id
             tempora aliquid quam, maxime eligendi dolorem eum quisquam eius!</p>
         </div>
         <div class=" flex flex-col space-y-5 items-center justify-center ">
-          <a href="/contact">
+          <NuxtLink to="/contact">
             <v-btn size="x-large" color="orange-lighten-3">Contact</v-btn>
-          </a>
-          <a href="/shop">
+          </NuxtLink>
+          <NuxtLink to="/">
             <v-btn size="x-large" variant="outlined" color="orange-lighten-3">Shop</v-btn>
-          </a>
+          </NuxtLink>
         </div>
       </div>
     </v-sheet>

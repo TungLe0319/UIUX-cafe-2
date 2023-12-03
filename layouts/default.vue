@@ -1,24 +1,26 @@
 <template>
   <div>
-  
-    <TemplatesPage>
+    <v-layout class="flex flex-col">
+      <div class="" v-if="!showAnimation">
+        <NavBar />
+      </div>
       <slot />
-    </TemplatesPage>
-  
-    <VuePreloader background-color="#000" color="#ffffff" transition-type="fade-up" :loading-speed="80"
+      <Footer />
+    </v-layout>
+    <VuePreloader background-color="#000" color="#ffffff" transition-type="fade-down" :loading-speed="40"
       :transition-speed="1800" @loading-is-over="showAnimation = false" @transition-is-over="transitionIsOver = true">
       <template v-slot="{ percent, color }">
         <transition name="loading-animation" mode="in-out">
           <div v-if="showAnimation" :style="{ color }" class="w-full flex items-center justify-center flex-col">
-
             <div class="text-8xl dancing-script mb-4">
-             Lorem Ipsum's Café
+              Lorem Ipsum's Café
             </div>
             <div class=" text-4xl text-orange-300">
               {{ percent }}%
             </div>
             <div class=" my-4 w-2/3">
-               <v-progress-linear :model-value="percent"></v-progress-linear></div>
+              <v-progress-linear :model-value="percent"></v-progress-linear>
+            </div>
           </div>
         </transition>
       </template>

@@ -9,12 +9,12 @@ const scrollToTop = () => {
 <template>
   <div class="w-full my-40 flex items-center justify-center  text-black">
     <div class="md:w-2/3 w-full px-4  flex flex-col">
-      <div class="w-full text-7xl font-bold">
-        <h1 class="w-full md:w-2/3">How can we help you.</h1>
+      <div class="w-full text-7xl font-bold font-serif">
+        <h1 class="w-full md:w-2/3">We give you our thanks.</h1>
       </div>
       <div class="flex mt-8 flex-col md:flex-row md:justify-between">
-        <p class="w-full md:w-2/3 text-gray-400">Fostering success through dedicated service. Navigate questions with our
-          committed assistance, ensuring your experience is met with tailored solutions for a enjoyable time. </p>
+        <p class="w-full md:w-2/3 text-gray-500">Fostering success through dedicated service. Navigate questions with our
+          committed assistance, ensuring your experience is met with tailored solutions. </p>
         <div class=" pt-6 md:pt-0 space-x-4">
           <NuxtLink to="/contact">
             <v-btn size="x-large" color="orange-lighten-3">Contact</v-btn>
@@ -24,9 +24,8 @@ const scrollToTop = () => {
         </div>
       </div>
       <div class="flex flex-col">
-        <div class="flex mt-24 mb-12 flex-row justify-between">
-          <div class="">
-          </div>
+        <div class="flex mt-24 mb-12 flex-row justify-between text-center items-center">
+          
           <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">About</a>
           <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Services</a>
           <a class="hidden md:block cursor-pointer text-gray-600 hover:text-white uppercase">Why us</a>

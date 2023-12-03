@@ -1,10 +1,12 @@
 <template>
-   <div class="flex flex-col items-center justify-center w-full">
+   <div class="flex flex-col items-center justify-center w-full lg:px-40">
         <div class=" text-center w-2/3 my-8">
-          <h1 class="text-6xl font-bold dancing-script  ">Our Photo Gallery</h1>
-          <hr class="w-1/2 mx-auto border border-amber-400 my-5">
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
-            quod obcaecati eligendi similique repellendus vero voluptas recusandae eius, veniam at est nemo quidem ad.</p>
+          <h1 class="text-7xl  dancing-script  ">Our Photo Gallery</h1>
+           <div class="w-full my-5">
+          <IconDivider/>
+        </div>
+          <div class="my-8 text-gray-500  text-center "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
+            quod obcaecati eligendi similique repellendus vero voluptas recusandae eius, veniam at est nemo quidem ad.</div>
         </div>
       </div>
       <div class="flex flex-col items-center justify-center space-y-4">
@@ -20,7 +22,12 @@
           <div class="absolute bottom-4">
             <NuxtLink
              to="/gallery">
-              <v-btn size="x-large" color="orange-lighten-3" elevation="5" class="text-white" >View All Photos</v-btn>
+            <div class="hidden">
+                <v-btn size="x-large" color="orange-lighten-3" elevation="5" class="text-white" >View All Photos</v-btn>
+            </div>
+               
+                  <v-btn  color="orange-lighten-3" elevation="5" class="text-white" >View All Photos</v-btn>
+             
             </NuxtLink>
           </div>
         </div>
@@ -29,6 +36,8 @@
 </template>
 
 <script lang="ts" setup>
+import IconDivider from './Globals/IconDivider.vue';
+
 
 </script>
 

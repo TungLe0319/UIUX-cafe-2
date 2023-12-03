@@ -8,9 +8,9 @@ import './assets/css/tailwind.css'
     <NuxtLayout>
    <v-app>
 
-        <NavBar />
+      
         <NuxtPage />
-        <Footer />
+    
       </v-app>
     </NuxtLayout>
    

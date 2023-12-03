@@ -1,19 +1,14 @@
 <template>
-  <main class="flex flex-col items-center justify-center  bg-amber-800/30 ">
+  <main class="flex flex-col items-center justify-center   mt-24 ">
     <v-sheet color=" p-4 lg:p-20 ">
-   <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-        <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-8 drop" />
-        <div class="text-7xl  dancing-script">What we do</div>
-        <div class="w-full my-5">
-           <IconDivider />
-        </div>
-      </div>
-      <div class="w-full">
+      <PageHeader title="What we do" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
+      exercitationem."/>
+      <section class="w-full  my-20 lg:my-40">
         <v-row>
           <template v-for="(image, imgIdx) in imageLayout" :key="imgIdx">
             <v-col :cols="image.cols">
               <v-img :src="`https://picsum.photos/1500/750?image=${image.cols * 20}`" cover height="100%"
-                class=" shadow-xl"></v-img>
+                class=" shadow-xl hover:scale-[1.02] transition-all duration-200"></v-img>
             </v-col>
             <v-col v-if="image.children" cols="6" class="d-flex flex-column">
               <v-row>
@@ -25,25 +20,29 @@
             </v-col>
           </template>
         </v-row>
-      </div>
-      <div class="flex flex-col items-center justify-center">
-        <div class="w-full flex items-center justify-center">
-          <div class=" lg:w-2/3   text-center  my-20">
-            <h1 class=" text-2xl lg:text-4xl ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus accusamus voluptates.
-            </h1>
-            <IconDivider class="my-5" />
+      </section>
+     <section>
+     
+        <Coffee />
+     </section>
+      <section class="flex flex-col items-center justify-center mb-20 lg:mb-0">
+           <div class="flex flex-col items-center  justify-center  my-10  ">
+          <div class="text-4xl  ">Lorem Ipsum Dolur</div>
+          <div class="w-full my-5">
+            <IconDivider />
           </div>
+          <div class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+            accusantium quibusdam quos! Velit, incidunt eius!</div>
         </div>
-        <div class="flex gap-2  ">
+        <div class="flex flex-col lg:flex-row gap-5  my-10  ">
           <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery5.jpg" alt=""
-            class="w-1/2">
+            class="lg:w-1/2 ">
           <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery6.jpg" alt=""
-            class="w-1/2">
+            class="lg:w-1/2">
         </div>
-      </div>
+      </section>
     </v-sheet>
-    <CallToAction title="Visit us today and try our delicious pie and coffee" />
+    <CallToAction  />
   </main>
 </template>
 

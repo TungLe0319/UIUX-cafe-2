@@ -1,12 +1,7 @@
 <template>
-  <main class="lg:p-20 ">
-    <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-      <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-8 drop" />
-      <div class="text-7xl  dancing-script">Our Special Menu</div>
-      <div class="w-full my-5">
-         <IconDivider />
-      </div>
-    </div>
+  <main class="lg:p-20 mt-24 ">
+   <PageHeader title="Our Special Menu" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
+      exercitationem."/>
     <section v-for="(section, index) in sections" :key="section.title" 
       class="bg-base-100 my-12 flex flex-col lg:flex-row space-y-4 p-8">
       <div class="lg:flex">
@@ -31,7 +26,7 @@
   <section>
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
         <Icon name="ep:dessert" class="text-8xl text-orange-300 mb-8 drop" />
-        <div class="text-4xl font-serif">More Sweets Menu</div>
+        <div class=" text-3xl lg:text-4xl font-serif">More Sweets Menu</div>
      <div class="w-full my-5">
            <IconDivider />
         </div>
@@ -62,7 +57,7 @@
   <section class=" my-16 lg:my-32">
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
         <Icon name="simple-icons:coffeescript" class="text-8xl text-orange-300 mb-8 drop" />
-        <div class="text-4xl font-serif">Coffee & Drinks</div>
+        <div class="text-3xl lg:text-4xl font-serif">Coffee & Drinks</div>
        <div class="w-full my-5">
            <IconDivider />
         </div>
@@ -91,7 +86,9 @@
         </div>
   </section>
 </main>
-<CallToAction title="Visit us today and try our sweets and coffee"/>
+<div class="my-20">
+  <CallToAction />
+</div>
 </template>
 
 <script lang="ts" setup>
