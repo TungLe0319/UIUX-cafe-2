@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center  justify-center  my-10  ">
       <div class="text-4xl  ">Lorem Ipsum Dolur</div>
       <div class="w-full my-5">
-        <IconDivider />
+        <IconDivider/>
       </div>
       <div class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
         accusantium quibusdam quos! Velit, incidunt eius!</div>
@@ -17,8 +17,10 @@
 </template>
 
 <script lang="ts" setup>
+import IconDivider from '../Globals/IconDivider.vue';
 
-import IconDivider from './Globals/IconDivider.vue';
+
+
 const items = [
   {
     src: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

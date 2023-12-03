@@ -48,9 +48,11 @@
 </template>
 
 <script lang="ts" setup>
+import Coffee from '~/components/Gallery/Coffee.vue';
 import CallToAction from '~/components/Globals/CallToAction.vue';
 import IconDivider from '~/components/Globals/IconDivider.vue';
 import PageHeader from '~/components/Globals/PageHeader.vue';
+
 
 const imageLayout = [
   { cols: 4 },

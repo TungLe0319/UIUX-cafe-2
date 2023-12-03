@@ -1,13 +1,5 @@
 <template>
   <div class="flex flex-col items-center  justify-center  mb-10 lg:mb-20">
-
-
-
-
-
-
-
-
     <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-10" />
     <div class="text-5xl lg:text-7xl dancing-script">
       {{ title }}
@@ -16,13 +8,15 @@
       <IconDivider />
     </div>
     <div class="text-gray-500 my-8  text-center lg:px-40">
-    {{ content }}
+      {{ content }}
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import IconDivider from './IconDivider.vue';
+
+
 
 
 const expand = ref(false)

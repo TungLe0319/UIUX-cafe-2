@@ -57,6 +57,7 @@ import CallToAction from '~/components/Globals/CallToAction.vue';
 import IconDivider from '~/components/Globals/IconDivider.vue';
 import PageHeader from '~/components/Globals/PageHeader.vue';
 
+
 const sections = [
   {
     title: 'Where we started',

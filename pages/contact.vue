@@ -4,6 +4,7 @@ import IconDivider from "~/components/Globals/IconDivider.vue";
 import { ref } from 'vue';
 import PageHeader from "~/components/Globals/PageHeader.vue";
 
+
 const firstName = ref('');
 const lastName = ref('');
 const email = ref('');
