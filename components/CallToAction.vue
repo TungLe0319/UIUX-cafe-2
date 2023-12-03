@@ -4,12 +4,12 @@
       <h2 class="text-2xl font-serif mb-8"> {{ title
       }}</h2>
       <div class="flex gap-4 items-center justify-center ">
-        <a href="/contact">
+        <NuxtLink href="/contact">
           <v-btn size="x-large" color="orange-lighten-3">Contact</v-btn>
-        </a>
-        <a href="/shop">
+        </NuxtLink>
+        <NuxtLink href="/shop">
           <v-btn size="x-large" variant="outlined" color="orange-lighten-3">Shop</v-btn>
-        </a>
+        </NuxtLink>
       </div>
     </div>
     <div

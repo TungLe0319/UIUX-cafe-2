@@ -18,9 +18,10 @@
           </div>
           <Icon name="fluent:leaf-three-16-filled"  />
           <div class="absolute bottom-4">
-            <a href="/gallery">
+            <NuxtLink
+             to="/gallery">
               <v-btn size="x-large" color="orange-lighten-3" elevation="5" class="text-white" >View All Photos</v-btn>
-            </a>
+            </NuxtLink>
           </div>
         </div>
         <Icon name="mingcute:leaf-3-fill"  />

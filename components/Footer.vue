@@ -16,9 +16,9 @@ const scrollToTop = () => {
         <p class="w-full md:w-2/3 text-gray-400">Fostering success through dedicated service. Navigate questions with our
           committed assistance, ensuring your experience is met with tailored solutions for a enjoyable time. </p>
         <div class=" pt-6 md:pt-0 space-x-4">
-          <a href="/contact">
+          <NuxtLink to="/contact">
             <v-btn size="x-large" color="orange-lighten-3">Contact</v-btn>
-          </a>
+          </NuxtLink>
         
              <v-btn @click="scrollToTop" class="orange-lighten-3" icon=" mdi-arrow-up" size="large"></v-btn>
         </div>

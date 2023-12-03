@@ -2,8 +2,10 @@
   <main class="lg:p-20 ">
     <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
       <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-8 drop" />
-      <div class="text-4xl font-serif">Our Special Menu</div>
-      <hr class=" w-2/12 my-5 border-orange-300">
+      <div class="text-7xl  dancing-script">Our Special Menu</div>
+      <div class="w-full my-5">
+         <IconDivider />
+      </div>
     </div>
     <section v-for="(section, index) in sections" :key="section.title" 
       class="bg-base-100 my-12 flex flex-col lg:flex-row space-y-4 p-8">
@@ -30,7 +32,9 @@
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
         <Icon name="ep:dessert" class="text-8xl text-orange-300 mb-8 drop" />
         <div class="text-4xl font-serif">More Sweets Menu</div>
-       <hr class=" w-2/12 my-5 border-orange-300">
+     <div class="w-full my-5">
+           <IconDivider />
+        </div>
       </div>
       <div class=" px-4 lg:px-32">
         <ul >
@@ -59,7 +63,9 @@
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
         <Icon name="simple-icons:coffeescript" class="text-8xl text-orange-300 mb-8 drop" />
         <div class="text-4xl font-serif">Coffee & Drinks</div>
-        <hr class=" w-2/12 my-5 border-orange-300">
+       <div class="w-full my-5">
+           <IconDivider />
+        </div>
       </div>
       <div class=" px-4 lg:px-32">
           <ul >

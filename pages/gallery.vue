@@ -1,12 +1,11 @@
 <template>
   <main class="flex flex-col items-center justify-center  bg-amber-800/30 ">
     <v-sheet color=" p-4 lg:p-20 ">
-      <div class="w-full flex items-center justify-center">
-        <div class=" lg:w-2/3   text-center  my-20">
-          <h1 class=" text-2xl lg:text-4xl ">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus accusamus voluptates.
-          </h1>
-          <IconDivider class="my-5" />
+   <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
+        <Icon name="pepicons-print:flower-bud" class="text-8xl text-orange-300 mb-8 drop" />
+        <div class="text-7xl  dancing-script">What we do</div>
+        <div class="w-full my-5">
+           <IconDivider />
         </div>
       </div>
       <div class="w-full">
@@ -21,7 +20,6 @@
                 <v-col v-for="(children, childIdx) in image.children" :key="childIdx" :cols="children.cols">
                   <v-img :src="`https://picsum.photos/1500/1000?image=${children.cols + childIdx}`" cover height="100%"
                     class="shadow-xl hover:scale-[1.02] transition-all duration-200 "></v-img>
-                  
                 </v-col>
               </v-row>
             </v-col>
@@ -70,7 +68,4 @@ const imageLayout = [
 img {
   @apply shadow-2xl
 }
-
-
-
 </style>
