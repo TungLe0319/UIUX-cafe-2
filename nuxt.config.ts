@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@invictus.codes/nuxt-vuetify", "@nuxt/ui"],
+  modules: [
+    "@invictus.codes/nuxt-vuetify",
+    "@nuxtjs/tailwindcss",
+    "nuxt-icon",
+    "@vueuse/motion/nuxt",
+    "@vueuse/nuxt",
+  ],
   vuetify: {
     /* vuetify options */
     vuetifyOptions: {

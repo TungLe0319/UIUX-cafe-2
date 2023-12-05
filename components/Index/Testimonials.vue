@@ -1,18 +1,18 @@
 <template>
   <div class="container mx-auto my-24 md:px-6">
      <div class="flex flex-col items-center justify-center w-full">
-          <div class=" text-center w-2/3 my-8">
-            <h1 class="text-7xl  dancing-script  ">Testimonials</h1>
-             <div class="w-full my-5">
+          <div  class=" text-center w-2/3 my-8">
+            <h1  v-motion-pop-visible class="text-7xl  dancing-script  ">Testimonials</h1>
+             <div v-motion-pop-visible class="w-full my-5">
             <IconDivider/>
           </div>
-            <p class="my-8 text-gray-500"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
+            <p v-motion-pop-visible class="my-8 text-gray-500"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
               quod obcaecati eligendi similique repellendus vero voluptas recusandae eius, veniam at est nemo quidem ad.</p>
           </div>
         </div>
     <section class="mb-32  mt-20 text-center px-5 lg:px-0">
       <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-        <div class="mb-12 md:mb-0">
+        <div v-motion-pop-visible class="mb-12 md:mb-0">
           <div class="mb-6 flex justify-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
@@ -31,7 +31,7 @@
             <Icon name="ic:round-star-half" color="text-warning" size="30" />
           </div>
         </div>
-        <div class="mb-12 md:mb-0">
+        <div v-motion-pop-visible class="mb-12 md:mb-0">
           <div class="mb-6 flex justify-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
@@ -49,7 +49,7 @@
             <Icon v-for="(i, index) in 5" :key="index" name="ic:round-star" color="text-warning" size="30" />
           </div>
         </div>
-        <div class="mb-0">
+        <div v-motion-pop-visible class="mb-0">
           <div class="mb-6 flex justify-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />

@@ -109,6 +109,7 @@ const threshold = ref(200)
         <template v-slot:activator="{ props }">
        <div class="lg:hidden block">
            <v-app-bar-nav-icon  v-bind="props"></v-app-bar-nav-icon>
+           
        </div>
         </template>
         <v-list class="w-full bg-red-400" color="orange-lighten-4">
@@ -126,7 +127,7 @@ const threshold = ref(200)
     <v-toolbar-title>Lorem Ipsum's Café</v-toolbar-title>
     <v-spacer></v-spacer>
     <ul class="gap-4 relative hidden lg:flex">
-      <li v-for="(item, index) in items" :key="index">
+      <li v-motion-pop-visible :delay="200 * index" v-for="(item, index) in items" :key="index">
         <nuxt-link :to="item.href" class="nav-item" exact-active-class="active text-orange-300 drop-shadow-sm ">
           {{ item.title }}
         </nuxt-link>

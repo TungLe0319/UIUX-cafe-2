@@ -1,15 +1,15 @@
 <template>
    <div class="flex flex-col items-center justify-center w-full lg:px-40">
         <div class=" text-center w-2/3 my-8">
-          <h1 class="text-7xl  dancing-script  ">Our Photo Gallery</h1>
-           <div class="w-full my-5">
+          <h1 v-motion-pop-visible class="text-7xl  dancing-script  ">Our Photo Gallery</h1>
+           <div v-motion-pop-visible class="w-full my-5">
           <IconDivider/>
         </div>
-          <div class="my-8 text-gray-500  text-center "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
+          <div v-motion-pop-visible class="my-8 text-gray-500  text-center "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum aliquam, nesciunt quia temporibus sunt magni,
             quod obcaecati eligendi similique repellendus vero voluptas recusandae eius, veniam at est nemo quidem ad.</div>
         </div>
       </div>
-      <div class="flex flex-col items-center justify-center space-y-4">
+      <div v-motion-pop-visible  class="flex flex-col items-center justify-center space-y-4">
         <Icon name="mingcute:leaf-3-fill"  />
         <div class="flex items-center justify-center space-x-4 p-10 relative">
           <Icon name="fluent:leaf-three-16-filled"  />

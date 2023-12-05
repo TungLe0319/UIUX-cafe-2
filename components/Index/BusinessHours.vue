@@ -1,14 +1,17 @@
 <template>
   <div class="p-20 w-full flex flex-col items-center justify-center space-y-3 ">
     <div class="text-center flex flex-col items-center justify-center space-y-4 ">
-      <Icon name="line-md:coffee-twotone-loop" class="text-orange-300 text-9xl" />
-      <div class="text-7xl   dancing-script ">
+   
+      <div v-motion-pop-visible >
+     <Icon name="line-md:coffee-twotone-loop" class="text-orange-300 text-9xl" />
+      </div>
+      <div v-motion-pop-visible class="text-7xl   dancing-script ">
         Welcome to our Café
       </div>
-      <div class="w-full my-5">
+      <div v-motion-pop-visible class="w-full my-5">
         <IconDivider />
       </div>
-      <div class=" text-gray-500 ">
+      <div v-motion-pop-visible class=" text-gray-500 ">
         Escape and unwind in a serene ambiance, where every moment is meant to be savored.
       </div>
     </div>
@@ -21,18 +24,18 @@
           772-555-5555
         </a>
         <div class="">
-          <p class="text-2xl">6AM - 3PM</p>
-          <p class="text-2xl">5AM - 10PM</p>
-          <p class="text-2xl">MONDAY - FRIDAY</p>
+          <p v-motion-pop-visible class="text-2xl">6AM - 3PM</p>
+          <p v-motion-pop-visible class="text-2xl">5AM - 10PM</p>
+          <p v-motion-pop-visible class="text-2xl">MONDAY - FRIDAY</p>
         </div>
         <div class="">
-          <p class="text-2xl">8AM - 3PM</p>
-          <p class="text-2xl">5AM - 10PM</p>
-          <p class="text-2xl">SATURDAY & SUNDAY</p>
+          <p v-motion-pop-visible  class="text-2xl">8AM - 3PM</p>
+          <p v-motion-pop-visible class="text-2xl">5AM - 10PM</p>
+          <p v-motion-pop-visible class="text-2xl">SATURDAY & SUNDAY</p>
         </div>
-        <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corporis laborum, in esse fugiat
+        <div v-motion-pop-visible class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corporis laborum, in esse fugiat
           reprehenderit</div>
-        <v-btn size="x-large" color="orange-lighten-3" class="text-white">
+        <v-btn v-motion-pop-visible size="x-large" color="orange-lighten-3" class="text-white">
           Contact
         </v-btn>
       </div>
