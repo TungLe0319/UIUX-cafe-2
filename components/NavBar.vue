@@ -124,14 +124,17 @@ const threshold = ref(200)
         </v-list>
       </v-menu>
     </template>
-    <v-toolbar-title>Lorem Ipsum's Café</v-toolbar-title>
+  
+   <div v-motion-slide-left :delay="2000">
+    <v-toolbar-title >Lorem Ipsum's Café</v-toolbar-title>
+   </div>
     <v-spacer></v-spacer>
-    <ul class="gap-4 relative hidden lg:flex">
-      <li v-motion-pop-visible :delay="200 * index" v-for="(item, index) in items" :key="index">
-        <nuxt-link :to="item.href" class="nav-item" exact-active-class="active text-orange-300 drop-shadow-sm ">
+    <ul v-motion-slide-right :delay="2000"  class="gap-4 relative hidden lg:flex">
+   
+        <nuxt-link    v-for="(item, index) in items" :key="index" :to="item.href" class="nav-item" exact-active-class="active text-orange-300 drop-shadow-sm ">
           {{ item.title }}
         </nuxt-link>
-      </li>
+   
       <div class="nav-indicator"></div>
     </ul>
   </v-app-bar>
@@ -145,7 +148,7 @@ const threshold = ref(200)
 .nav-item:before {
   content: "";
   position: absolute;
-  bottom: -6px;
+  bottom: -10px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -157,7 +160,7 @@ const threshold = ref(200)
 
 .nav-item:not(.active):hover:before {
   opacity: 1;
-  bottom: 0;
+
 }
 
 
@@ -166,7 +169,7 @@ const threshold = ref(200)
 .nav-indicator {
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -10px;
   height: 4px;
   transition: 0.4s;
   background-color: rgb(253 186 116);
