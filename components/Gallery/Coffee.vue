@@ -1,15 +1,15 @@
 <template>
   <div>
     <div class="flex flex-col items-center  justify-center  my-10  ">
-      <div class="text-4xl  ">Lorem Ipsum Dolur</div>
-      <div class="w-full my-5">
+      <div v-motion-pop-visible class="text-4xl  ">Lorem Ipsum Dolur</div>
+      <div v-motion-pop-visible class="w-full my-5">
         <IconDivider/>
       </div>
-      <div class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+      <div v-motion-pop-visible class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
         accusantium quibusdam quos! Velit, incidunt eius!</div>
     </div>
     <div class="grid  md:grid-cols-2 lg:grid-cols-4 gap-6  py-10 ">
-      <div v-for="item in items" class="  group transition-all duration-200 hover:scale-[1.02] relative">
+      <div v-motion-pop-visible v-for="item in items" class="  group transition-all duration-200 hover:scale-[1.02] relative">
         <img :src="item.src" alt="coffee cup icon" class=" shadow-2xl w-full  object-cover  h-96">
       </div>
     </div>

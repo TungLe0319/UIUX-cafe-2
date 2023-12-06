@@ -3,13 +3,13 @@
     <PageHeader title="Our Special Menu" content="  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, corporis similique. Maxime corrupti possimus
       exercitationem." />
     <div class="lg:p-20">
-      <section v-for="(section, index) in sections" :key="section.title"
+      <section  v-for="(section, index) in sections" :key="section.title"
         class="bg-base-100 my-12 flex flex-col lg:flex-row space-y-4 p-8">
         <div class="lg:flex">
-          <div :class="index % 2 === 0 ? ' order-1' : ' order-0'" class="flex lg:w-1/2 items-center justify-center">
+          <div  v-motion-slide-visible-left     :class="index % 2 === 0 ? ' order-1' : ' order-0'" class="flex lg:w-1/2 items-center justify-center">
             <img :src="section.image" alt="about image">
           </div>
-          <article :class="index % 2 === 1 ? ' order-1' : ' order-0'"
+          <div v-motion-slide-visible-right  :class="index % 2 === 1 ? ' order-1' : ' order-0'"
             class="text-center flex lg:w-1/2 flex-col space-y-6 p-10">
             <h2 class="text-xl lg:text-2xl font-serif text-orange-300 ">
               {{ section.price }}
@@ -21,20 +21,23 @@
             <p class="leading-8 font-sans text-gray-600">
               {{ section.content }}
             </p>
-          </article>
+          </div>
         </div>
       </section>
       <section>
         <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-          <Icon name="ep:dessert" class="text-8xl text-orange-300 mb-8 drop" />
-          <div class=" text-3xl lg:text-4xl font-serif">More Sweets Menu</div>
-          <div class="w-full my-5">
+          <div  v-motion-pop-visible>
+
+            <Icon name="ep:dessert" class="text-8xl text-orange-300 mb-8 drop" />
+          </div>
+          <div  v-motion-pop-visible class=" text-3xl lg:text-4xl font-serif">More Sweets Menu</div>
+          <div  v-motion-pop-visible class="w-full my-5">
             <IconDivider />
           </div>
         </div>
         <div class=" px-4 lg:px-32">
           <ul>
-            <li v-for="menuItem in menuItems"
+            <li  v-motion-slide-visible-left  v-for="menuItem in menuItems"
               class="flex flex-col lg:flex-row items-center justify-between w-full border-b p-4 hover:shadow-md  transition-all duration-200">
               <div class="flex flex-col items-center justify-between w-4/5">
                 <div class="flex flex-col items-start   w-full">
@@ -57,15 +60,18 @@
       </section>
       <section class=" my-16 lg:my-32">
         <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
-          <Icon name="simple-icons:coffeescript" class="text-8xl text-orange-300 mb-8 drop" />
-          <div class="text-3xl lg:text-4xl font-serif">Coffee & Drinks</div>
-          <div class="w-full my-5">
+          <div v-motion-pop-visible>
+            <Icon name="simple-icons:coffeescript" class="text-8xl text-orange-300 mb-8 drop" />
+
+          </div>
+          <div v-motion-pop-visible class="text-3xl lg:text-4xl font-serif">Coffee & Drinks</div>
+          <div v-motion-pop-visible class="w-full my-5">
             <IconDivider />
           </div>
         </div>
         <div class=" px-4 lg:px-32">
           <ul>
-            <li v-for="menuItem in menuItems"
+            <li v-motion-slide-visible-left  v-for="menuItem in menuItems"
               class="flex flex-col lg:flex-row items-center justify-between w-full border-b p-4 hover:shadow-md  transition-all duration-200">
               <div class="flex flex-col items-center justify-between w-4/5">
                 <div class="flex flex-col items-start   w-full">

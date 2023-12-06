@@ -49,7 +49,7 @@
             <Icon v-for="(i, index) in 5" :key="index" name="ic:round-star" color="text-warning" size="30" />
           </div>
         </div>
-        <div v-motion-pop-visible class="mb-0">
+        <div v-motion-pop-visible  class="mb-0">
           <div class="mb-6 flex justify-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />

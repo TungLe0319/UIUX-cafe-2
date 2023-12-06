@@ -4,6 +4,7 @@
       exercitationem."/>
     <v-sheet class="lg:p-20 mt-32">
   
+      <div v-motion-pop-visible>
       <v-carousel>
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe3.jpg"
           cover></v-carousel-item>
@@ -12,9 +13,10 @@
         <v-carousel-item src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_ourcafe2.jpg"
           cover></v-carousel-item>
       </v-carousel>
-    
+
+    </div>
       <section v-for="section in sections" class="lg:flex   my-10 lg:my-20">
-        <div class="  lg:w-1/2  flex flex-col items-center justify-center  ">
+        <div v-motion-slide-visible-left  class="  lg:w-1/2  flex flex-col items-center justify-center  ">
          <span class="text-4xl  font-serif mb-5">
            {{ section.title }}
          </span>
@@ -22,7 +24,7 @@
           <img :src="section.image" alt="image of a restaurant" class=" w-2/3">
        
         </div>
-        <div class=" lg:w-1/2 p-10  leading-8">
+        <div v-motion-slide-visible-right class=" lg:w-1/2 p-10  leading-8">
           <strong class="text-8xl  dancing-script text-orange-300">{{ section.content.charAt(0) }} </strong>
           {{ section.content }}
         </div>
@@ -30,15 +32,15 @@
    
       <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
       
-        <div class="text-4xl font-serif text-center"> Lorem ipsum dolor sit. </div>
-        <div class="w-full pt-8">
+        <div v-motion-pop-visible class="text-4xl font-serif text-center"> Lorem ipsum dolor sit. </div>
+        <div v-motion-pop-visible class="w-full pt-8">
           <IconDivider />
         </div>
-        <div class="w-2/3 text-center my-8 text-gray-500">
+        <div v-motion-pop-visible class="w-2/3 text-center my-8 text-gray-500">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, iure optio rem nihil placeat laboriosam id
             tempora aliquid quam, maxime eligendi dolorem eum quisquam eius!</p>
         </div>
-        <div class=" flex flex-col space-y-5 items-center justify-center ">
+        <div v-motion-pop-visible class=" flex flex-col space-y-5 items-center justify-center ">
           <NuxtLink to="/contact">
             <v-btn size="x-large" color="orange-lighten-3">Contact</v-btn>
           </NuxtLink>

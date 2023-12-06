@@ -24,7 +24,7 @@ const contentRule = [requiredRule];
   <main class="    ">
     <PageHeader title="Contact Us" content="  Lorem ipsum dolor, sit amet consectetur adipisicing elit." />
     <section class="lg:flex  items-start justify-center mt-32 w-full  ">
-      <div class="lg:w-1/3 flex flex-col items-center justify-center">
+      <div v-motion-slide-visible-left class="lg:w-1/3 flex flex-col items-center justify-center">
         <h1 class="text-2xl font-bold  text-amber-400 font-serif">Lorem Ipsum Café</h1>
         <div class="w-full my-10">
           <IconDivider />
@@ -49,8 +49,8 @@ const contentRule = [requiredRule];
           </div>
         </div>
       </div>
-      <div class="lg:w-2/3 ">
-        <div class="lg:hidden block text-center font-serif  mt-10 lg:mt-0 ">
+      <div v-motion-slide-visible-right class="lg:w-2/3 ">
+        <div v-motion-pop-visible class="lg:hidden block text-center font-serif  mt-10 lg:mt-0 ">
           Leave us a message!
           <IconDivider class="my-10 lg:my-0" />
         </div>
@@ -83,17 +83,17 @@ const contentRule = [requiredRule];
     <section class=" my-24 ">
        <div class="flex flex-col items-center  justify-center  my-10 lg:my-20">
       
-          <div class="text-4xl font-serif text-center"> Find us! </div>
-          <div class="w-full pt-8">
+          <div v-motion-pop-visible class="text-4xl font-serif text-center"> Find us! </div>
+          <div v-motion-pop-visible class="w-full pt-8">
             <IconDivider />
           </div>
-          <div class="w-2/3 text-center my-8 text-gray-500">
+          <div v-motion-pop-visible class="w-2/3 text-center my-8 text-gray-500">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, iure optio rem nihil placeat laboriosam id
               tempora aliquid quam, maxime eligendi dolorem eum quisquam eius!</p>
           </div>
         
         </div>
-        <div class="lg:flex  items-center justify-center gap-10">
+        <div v-motion-slide-visible-bottom class="lg:flex  items-center justify-center gap-10">
      <Icon  name="uil:facebook" class="text-8xl text-amber-400 " />
           <Icon  name="uil:instagram" class="text-8xl text-amber-400 " />
           <Icon  name="uil:youtube" class="text-8xl text-amber-400 " />

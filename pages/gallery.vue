@@ -4,7 +4,7 @@
       exercitationem."/>
     <v-sheet color=" p-4 lg:px-20 ">
      
-      <section class="w-full  my-20 lg:my-40">
+      <section v-motion-slide-visible-bottom class="w-full  my-20 lg:my-40">
         <v-row>
           <template v-for="(image, imgIdx) in imageLayout" :key="imgIdx">
             <v-col :cols="image.cols">
@@ -28,17 +28,17 @@
      </section>
       <section class="flex flex-col items-center justify-center mb-20 lg:mb-0">
            <div class="flex flex-col items-center  justify-center  my-10  ">
-          <div class="text-4xl  ">Lorem Ipsum Dolur</div>
-          <div class="w-full my-5">
+          <div v-motion-pop-visible class="text-4xl  ">Lorem Ipsum Dolur</div>
+          <div v-motion-pop-visible class="w-full my-5">
             <IconDivider />
           </div>
-          <div class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+          <div v-motion-pop-visible class=" text-center text-gray-500 my-8 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
             accusantium quibusdam quos! Velit, incidunt eius!</div>
         </div>
         <div class="flex flex-col lg:flex-row gap-5  my-10  ">
-          <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery5.jpg" alt=""
+          <img v-motion-slide-left src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery5.jpg" alt=""
             class="lg:w-1/2  ">
-          <img src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery6.jpg" alt=""
+          <img v-motion-slide-right src="https://themes.muffingroup.com/be/cafe2/wp-content/uploads/2017/09/home_cafe2_gallery6.jpg" alt=""
             class="lg:w-1/2">
         </div>
       </section>
